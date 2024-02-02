@@ -64,7 +64,7 @@ export default function Navbar() {
           </div>
           <Link href="/" className="flex gap-2">
           <Image
-            src={"/logo.svg"}
+            src={"Logo.svg"}
             alt="logo"
             width={16}
             height={16}
