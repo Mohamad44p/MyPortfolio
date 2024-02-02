@@ -83,10 +83,10 @@ export default function contactsPage() {
       {linksData.map((link) => (
           <div key={link.id} className="flex flex-col">
             {link.link.startsWith("mailto:") ? (
-              <Link href={link.link} className="flex flex-col justify-center items-center gap-3 z-[100] card">
-                <h1 className="p-2 text-center text-[#FFF] font-bold">{link.name}</h1>
-                {React.createElement(link.icon, { className: "w-6 h-6 text-white" })}
-              </Link>
+               <a className="flex flex-col justify-center items-center gap-3 z-[100] card">
+               <h1 className="p-2 text-center text-[#FFF] font-bold">{link.name}</h1>
+               {React.createElement(link.icon, { className: "w-6 h-6 text-white" })}
+             </a>
             ) : (
               <Link href={link.link} target="_blank" className="flex flex-col justify-center items-center gap-3 z-[100] card">
                 <h1 className="p-2 text-center text-[#FFF] font-bold">{link.name}</h1>
